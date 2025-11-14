@@ -1,15 +1,18 @@
 <!-- admin.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Menina Cheirosa</title>
     <link rel="icon" href="./image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/admin.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Header Admin -->
     <header class="admin-header">
@@ -18,7 +21,7 @@
                 <h1>Menina Cheirosa</h1>
                 <span>Administrador</span>
             </div>
-            
+
             <div class="admin-profile">
                 <div class="profile-info">
                     <h3>Aline Costa</h3>
@@ -38,15 +41,19 @@
                     <input type="text" id="admin-search" placeholder="Buscar por ID ou nome do produto...">
                     <button id="admin-search-btn"><i class="fas fa-search"></i></button>
                 </div>
-                
-                <a href="index.html" class="back-btn">
-                    <i class="fas fa-arrow-left"></i> Voltar ao Site
-                </a>
+                <div class="buttons-administra">
+                    <a href="index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar ao Site
+                    </a>
+                    <a href="index.html" class="back-btn" id="logout">
+                        <i class="fas fa-sign-out"></i> Sair da Conta
+                    </a>
+                </div>
             </div>
-            
+
             <div class="products-table">
                 <h2>Produtos Cadastrados</h2>
-                
+
                 <table>
                     <thead>
                         <tr>
@@ -69,4 +76,5 @@
     <script src="./js/produtos.js"></script>
     <script src="./js/admin.js"></script>
 </body>
+
 </html>

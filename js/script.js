@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Adicionar eventos aos botões de adicionar ao carrinho
         document.querySelectorAll('.add-to-cart').forEach(button => {
             button.addEventListener('click', function() {
-                const productId = parseInt(this.getAttribute('data-id'));
+                const productId = this.getAttribute('data-id');
                 addToCart(productId);
             });
         });
