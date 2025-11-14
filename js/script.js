@@ -130,21 +130,21 @@ document.addEventListener('DOMContentLoaded', function() {
         // Adicionar eventos aos botões de quantidade
         document.querySelectorAll('.decrease').forEach(button => {
             button.addEventListener('click', function() {
-                const productId = parseInt(this.getAttribute('data-id'));
+                const productId = this.getAttribute('data-id');
                 decreaseQuantity(productId);
             });
         });
         
         document.querySelectorAll('.increase').forEach(button => {
             button.addEventListener('click', function() {
-                const productId = parseInt(this.getAttribute('data-id'));
+                const productId = this.getAttribute('data-id');
                 increaseQuantity(productId);
             });
         });
         
         document.querySelectorAll('.remove-item').forEach(button => {
             button.addEventListener('click', function() {
-                const productId = parseInt(this.getAttribute('data-id'));
+                const productId = this.getAttribute('data-id');
                 removeFromCart(productId);
             });
         });
